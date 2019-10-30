@@ -1,0 +1,205 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("opensansbold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #232527;
+  background-color: #ffffff;
+  min-width: 1220px;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  -webkit-box-shadow: 0 3px 7px 0px rgba(0, 0, 0, .35);
+          box-shadow: 0 3px 7px 0px rgba(0, 0, 0, .35);
+}
+
+.main_header {
+ background: #232527;
+ color: #ECECEC;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.my_skills {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+  margin-bottom: 29px;
+}
+
+.projects {
+ background: #232527;
+ color: #ECECEC;
+ padding-top: 20px;
+ padding-left: 50px;
+ padding-bottom: 186px;
+}
+
+.my_name {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.my_specialty {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about_me,
+.my_diplomas,
+.my_projects {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.my_projects {
+  color: #ECECEC;
+}
+
+.about_skills {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 0;
+}
+
+.my_photo {
+  margin-top: 51px;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 35px;
+  list-style: none;
+  padding: 0;
+}
+
+
+.skills {
+  margin-left: 50px;
+}
+
+.diplomas {
+  margin-left: 90px;
+}
+
+.github {
+  color: #ffffff;
+}
+
+.github_link {
+  color: #ECECEC; 
+  display: flex;
+  align-items: center;
+}
+
+.github_text {
+  padding-right: 8px;
+  border-bottom: 2px solid #ECECEC;
+}
+
+.social-mail {
+  background: #E6B300;
+  border-radius: 50%;
+}
+
+
+.social-telegtam {
+  background: #59AAE7;
+  border-radius: 50%;
+}
+
+
+.social-whatsup {
+  background: #75B73B;
+  border-radius: 50%;
+}
+
+.telegram,
+.whatsup.
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.social_item {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.sertificate-1,
+.sertificate-2,
+.sertificate-3 {
+  margin-right: 15px;
+}
+
+.sertificate-3_img {
+margin-bottom: 17px;
+}
+
+.main_sertificate-1,
+.main_sertificate-2,
+.main_sertificate-3 {
+  background: #232527;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
