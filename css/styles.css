@@ -72,6 +72,7 @@ html {
  color: #ECECEC;
  padding-top: 20px;
  padding-left: 50px;
+ padding-bottom: 100px;
 }
 
 .my_name {
@@ -137,16 +138,12 @@ html {
   color: #ECECEC; 
   display: flex;
   align-items: center;
-  padding-bottom: 186px;
+  padding-bottom: 66px;
 }
 
 .github_text {
   padding-right: 8px;
   border-bottom: 2px solid #ECECEC;
-}
-
-.github {
-padding-bottom: 186px;
 }
 
 .social-mail {
@@ -203,3 +200,19 @@ margin-bottom: 17px;
   margin-left: 20px;
 }
 
+.sedona {
+  margin-bottom: 66px;
+}
+
+.projects_btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progect_name {
+  color: #ECECEC;
+  text-transform: uppercase;
+  text-align: center;
+}
