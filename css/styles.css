@@ -23,22 +23,18 @@ body {
   min-width: 1220px;
 }
 
-
 img {
 	max-width: 100%;
 }
-
 
 a {
 	text-decoration: none;
 }
 
-
 html {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
 
 *,
 *::before,
@@ -125,7 +121,6 @@ html {
   padding: 0;
 }
 
-
 .skills {
   margin-left: 50px;
 }
@@ -134,7 +129,7 @@ html {
   margin-left: 90px;
 }
 
-.github {
+.github_img {
   color: #ffffff;
 }
 
@@ -150,17 +145,19 @@ html {
   border-bottom: 2px solid #ECECEC;
 }
 
+.github {
+padding-bottom: 186px;
+}
+
 .social-mail {
   background: #E6B300;
   border-radius: 50%;
 }
 
-
 .social-telegtam {
   background: #59AAE7;
   border-radius: 50%;
 }
-
 
 .social-whatsup {
   background: #75B73B;
