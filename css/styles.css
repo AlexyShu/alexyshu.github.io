@@ -182,19 +182,19 @@ html {
   height: 25px;
 }
 
-.sertificate-1,
-.sertificate-2,
-.sertificate-3 {
+.certificate-1,
+.certificate-2,
+.certificate-3 {
   margin-right: 15px;
 }
 
-.sertificate-3_img {
+.certificate-3_img {
 margin-bottom: 17px;
 }
 
-.main_sertificate-1,
-.main_sertificate-2,
-.main_sertificate-3 {
+.main_certificate-1,
+.main_certificate-2,
+.main_certificate-3 {
   background: #232527;
   display: flex;
   justify-content: center;
