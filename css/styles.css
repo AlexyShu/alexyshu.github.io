@@ -76,7 +76,6 @@ html {
  color: #ECECEC;
  padding-top: 20px;
  padding-left: 50px;
- padding-bottom: 186px;
 }
 
 .my_name {
@@ -143,6 +142,7 @@ html {
   color: #ECECEC; 
   display: flex;
   align-items: center;
+  padding-bottom: 186px;
 }
 
 .github_text {
@@ -195,11 +195,14 @@ margin-bottom: 17px;
 .main_certificate-1,
 .main_certificate-2,
 .main_certificate-3 {
-  background: #232527;
   display: flex;
+  background: #232527;
   justify-content: center;
-  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.index_btn {
+  margin-left: 20px;
 }
 
