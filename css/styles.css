@@ -162,8 +162,7 @@ html {
 }
 
 .telegram,
-.whatsup.
-.mail {
+.whatsup {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,4 +228,82 @@ margin-bottom: 17px;
 
 .my_whatsup {
   margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+  .wrep {
+      width: 1000px;
+  }
+
+  .my_name {
+    font-size: 42px;
+  }
+
+  .my_specialty {
+    font-size: 28px;
+  }
+
+  .social_item {
+    width: 38px;
+    height: 38px;
+}
+
+.my_mail {
+  width: 23px;
+  height: 20px;
+  margin-top: 9px;
+}
+
+.my_telegram {
+  margin-top: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.my_whatsup {
+  margin-top: 7px;
+  width: 24px;
+  height: 24px;
+}
+
+  .my_skills {
+    flex-direction: column;
+  }
+
+  .about_me, .my_diplomas, .my_projects {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about_skills {
+    font-size: 24px;
+    line-height: 27px;
+    padding-bottom: 40px;
+  }
+
+  .about_skills-item {
+    margin-bottom: 14px;
+  }
+
+  .diplomas {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 26px;
+  }
+
+  .certificate {
+    width: 410px;
+    height: 478px;
+    margin-bottom: 14px;
+  }
+
+  .certificate-horizontally {
+    width: 454px;
+    height: 400px;
+    margin-bottom: 14px;
+  }
+
+  .github {
+    font-size: 26px;
+  }
 }
