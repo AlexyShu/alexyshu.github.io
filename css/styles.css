@@ -226,6 +226,20 @@ html {
   margin-top: 5px;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-description {
+  width: 550px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
 @media (max-width: 1000px) {
   .wrep {
       width: 1000px;
