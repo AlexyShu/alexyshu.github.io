@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render correct SimilarFilmsList Render SimilarFilmsList 1`] = `
+<div
+  className="catalog__movies-list"
+>
+  <a
+    className="small-movie-card catalog__movies-card small-movie-card__link"
+    href="/films/1"
+    onClick={[Function]}
+  >
+    <article
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    >
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="The Grand Budapest Hotel"
+          height="175"
+          src="img/the-grand-budapest-hotel-poster.jpg"
+          width="280"
+        />
+      </div>
+      <h3
+        className="small-movie-card__title"
+      >
+        The Grand Budapest Hotel
+      </h3>
+    </article>
+  </a>
+</div>
+`;

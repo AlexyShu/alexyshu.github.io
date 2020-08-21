@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render correct Player Render Player 1`] = `
+<video
+  controls={true}
+  poster="img/the-grand-budapest-hotel-poster.jpg"
+  width="100%"
+>
+  <source
+    src="https://some-link"
+  />
+</video>
+`;

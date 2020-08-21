@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render correct LoadingError Render LoadingError 1`] = `
+<div
+  className="user-page"
+>
+  <h1
+    className="page-title user-page__title"
+  >
+    Oh... NO! 😳  Error! Please try again later.
+  </h1>
+</div>
+`;
