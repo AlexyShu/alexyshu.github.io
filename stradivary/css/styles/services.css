@@ -1,0 +1,24 @@
+.services-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 0 14px;
+}
+
+.services-pic {
+    width: 112px;
+    height: 112px;
+}
+
+.services-name {
+    font-weight: bold;
+}
+
+.services-list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-right: 40px;
+}

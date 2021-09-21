@@ -1,0 +1,12 @@
+@import "./styles/normalize.css";
+@import "./styles/main.css";
+@import "./styles/header.css";
+@import "./styles/footer.css";
+@import "./styles/slogan.css";
+@import "./styles/product.css";
+@import "./styles/kiosk.css";
+@import "./styles/price.css";
+@import "./styles/info.css";
+@import "./styles/contacts.css";
+@import "./styles/articles.css";
+@import "./styles/popup.css";

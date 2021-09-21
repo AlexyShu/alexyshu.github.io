@@ -1,0 +1,92 @@
+.popup,
+.kiosk-popup,
+.info-popup,
+.contacts-popup,
+.price-popup {
+    position: absolute;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    padding: 30px;
+}
+
+.popup,
+.info-popup {
+    top: 0;
+    left: 35%;
+}
+
+.kiosk-popup {
+    top: 20%;
+    left: 35%;
+}
+
+.contacts-popup {
+    top: 15%;
+    left: 10%;
+}
+
+.price-popup {
+    top: 10%;
+    left: 31%;
+}
+
+.popup-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #272727;
+}
+
+.popup-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #424242;
+    padding-bottom: 24px;
+}
+
+.popup-marker {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #424242;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .popup, .info-popup {
+        top: 0;
+        left: 10%;
+    }
+
+    .popup-title {
+        font-size: 30px;
+    }
+
+    .popup-text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .popup-marker {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .kiosk-popup {
+        top: 27%;
+        left: 10%;
+    }
+
+    .price-popup {
+        top: 30%;
+        left: 10%;
+    }
+}

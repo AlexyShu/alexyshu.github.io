@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.footer-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #424242;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social_item {
+    padding: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .footer-text {
+        display: none;
+    }
+}

@@ -1,0 +1,12 @@
+@import "./styles/normalize.css";
+@import "./styles/main.css";
+@import "./styles/header.css";
+@import "./styles/footer.css";
+@import "./styles/about.css";
+@import "./styles/menu.css";
+@import "./styles/saloon.css";
+@import "./styles/events.css";
+@import "./styles/gallery.css";
+@import "./styles/form.css";
+@import "./styles/services.css";
+@import "./styles/slider.css";

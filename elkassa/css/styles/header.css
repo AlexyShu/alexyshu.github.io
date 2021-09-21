@@ -1,0 +1,48 @@
+.header {
+    padding: 22px 40px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-phone {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #272727;
+}
+
+.header-callback {
+    width: 236px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;      
+    color: #FF7511;
+    border: 2px solid #FF7511;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+.header-callback:hover {
+    width: 236px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;      
+    color: #FFFFFF;
+    background: #FF7511;
+    border: 2px solid #FF7511;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+@media (max-width: 600px) {
+    .header-phone {
+        font-size: 30px;
+        line-height: 26px;
+    }
+
+    .header-callback {
+        display: none;
+    }  
+}

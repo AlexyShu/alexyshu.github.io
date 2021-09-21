@@ -1,0 +1,130 @@
+.contacts {
+    background-image: url(../../images/background-footer.png); 
+    background-repeat: no-repeat;
+    height: 1502px;
+    padding: 70px 110px 0 110px;
+}
+
+.contacts-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 105px;
+
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+.contacts-phone {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FF7D1F;
+    padding-bottom: 6px;
+    padding-top: 38px;
+}
+
+.contacts-phone_marker {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 38px;
+}
+
+.contacts-mail {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #424242;
+    padding-top: 38px;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width: 460px;
+    padding: 46px 40px;
+}
+
+.contacts-field {
+    width: 380px;
+    background: #F9F9F9;
+    border-radius: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #424242;
+    padding: 18px;
+    margin-bottom: 22px;
+}
+
+.contacts-form_title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 50px;
+}
+
+.contacts-form_marker {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #424242;
+    text-align: left;
+    padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .contacts {
+        height: 1245px;
+        padding: 70px 40px 0 40px;
+        margin-bottom: 40px;
+    }
+
+    .contacts-field {
+        font-size: 20px;
+        line-height: 16px;
+        padding: 26px;
+    }
+
+    .contacts-wrap {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .contacts-block {
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .contacts-request {
+        display: none;
+    }
+
+    .contacts-phone_marker {
+        text-align: center;
+    }
+
+    .contacts-mail {
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    .contacts-form {
+        width: 100%;
+        align-items: center;
+    }
+}

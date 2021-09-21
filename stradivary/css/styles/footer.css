@@ -1,0 +1,14 @@
+.footer {
+    background: #171716;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.footer-list_item {
+    margin-right: 30px;
+} 

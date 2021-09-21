@@ -1,0 +1,23 @@
+.about_text {
+    text-align: center;
+    margin: 40px 250px 60px;
+}
+
+.about_text-item {
+    margin-bottom: 20px;
+}
+
+.about-event {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+@media (max-width: 1040px) {
+    .about_text {
+        margin: 40px 130px 60px;
+    }
+}

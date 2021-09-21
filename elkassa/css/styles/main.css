@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto.ttf');
+    src: local('Roboto'), local('Roboto'),
+    url('../../fonts/Roboto.woff') format('woff'),
+    url('../../fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Robotobold.ttf');
+    src: local('Roboto Bold'), local('Roboto Bold'),
+    url('../../fonts/Robotobold.woff') format('woff'),
+    url('../../fonts/Robotobold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+html {
+    min-width: 320px;
+}
+  
+body {
+    position: relative;
+    background: #E5E5E5;
+    color: #424242;
+    margin: 0;
+    padding: 0px 0 0 0;
+    height: auto !important;
+    min-height: 100%;
+    min-width: 320px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23,44px;
+}
+  
+html > body {
+    padding: 0;
+}
+  
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+  
+.wrap {
+    display: flex;
+    justify-content: center;
+    min-width: 1440px;
+}
+
+.content-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1440px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+}
+  
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+}
+
+.background-wrap {
+    background-image: url(../../images/background.png);
+    background-repeat: no-repeat;
+    height: 906px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    color: #272727;
+}
+
+.btn-orange,
+.btn,
+.request-btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    border: 2px solid #FF7511;
+    border-radius: 30px;
+    padding: 10px 28px;
+}
+
+.btn-orange,
+.btn:hover {
+    color: #FFFFFF;
+    background: #FF7D1F;
+}
+
+.btn-orange:hover,
+.btn,
+.request-btn {
+    color: #FF7D1F;
+    background: #FFFFFF;
+}
+
+.request-btn:hover {
+    color: #FFFFFF;
+    background: #FF7D1F;
+    border: 2px solid #FFFFFF;
+}
+
+.partners {
+    background-image: url(../../images/background-partners.png); 
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.modal-show-animation {
+    animation-name: bounce;
+    animation-duration: 0.7s;
+}
+
+@keyframes bounce {
+	0% {transform: translateX(-1000px);}
+	50% {transform: translateX(80px);}
+	100% {transform: translateX(0);}
+}
+
+.btn-close,
+.btn-kiosk-close,
+.btn-info-close,
+.btn-contacts-close,
+.btn-price-close {
+    margin-left: auto; 
+    cursor: pointer;
+}
+
+.partners-text {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        min-width: 600px;
+    }
+
+    .content-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        background: #FFFFFF;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+    }
+
+    .btn-orange, .btn, .request-btn {
+        font-size: 28px;
+        padding: 16px 36px;
+    }
+
+    .partners {
+        background-image: url(../../images/background-partners-mobile.png); 
+        background-repeat: no-repeat;
+        height: 315px;
+    }
+
+    .partners-title {
+        display: none;
+    }
+
+    .partners-text {
+        display: block;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 59px;
+        color: #272727;
+    }
+}

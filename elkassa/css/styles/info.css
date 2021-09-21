@@ -1,0 +1,90 @@
+.info {
+    background-image: url(../../images/background-info.png); 
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.info-block {
+    position: relative;
+    background: #FF7D1F;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 37px 94px;
+}
+
+.info-block_title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.info-block_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #272727;
+    padding-bottom: 10px;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #424242;
+    border-bottom: 0;
+}
+
+.hide:checked + label + div {
+    display: block; 
+    padding: 10px; 
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #424242;
+}
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+}
+
+.info-answers {
+    background: #f9f9f9;
+    height: auto;
+    padding-bottom: 90px;
+}
+
+@media (max-width: 600px) { 
+    .info {
+        background-image: none; 
+        height: auto;
+        padding: 0px 40px 100px 40px;
+    } 
+
+    .info-block {
+        flex-direction: column;
+        padding: 80px 94px
+    }
+
+    .info-block_text {
+        font-size: 22px;
+        line-height: 27px;
+        padding-bottom: 30px;
+    }
+}
