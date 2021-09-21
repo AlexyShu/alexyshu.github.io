@@ -203,6 +203,7 @@ html {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  height: 100vh;
 }
 
 .index_btn {
