@@ -273,6 +273,7 @@ html {
   width:100%;
   overflow: hidden;
   max-height: 800px;
+  border: 1px solid #ffffff;
 }
 
 .slider_item {
