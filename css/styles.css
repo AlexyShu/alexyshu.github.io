@@ -109,6 +109,7 @@ html {
 .my_projects {
   font-size: 16px;
   line-height: 22px;
+  color: #232527;
 }
 
 .my_projects {
@@ -191,6 +192,12 @@ html {
   margin-right: 10px;
   width: 25px;
   height: 25px;
+}
+
+.certificate-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .certificate-1,
