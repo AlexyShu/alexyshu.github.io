@@ -3,13 +3,27 @@
    <head>
       <meta charset="utf-8">
          <title>SHUBINA ALEKSANDRA</title>
-        
          <link rel="stylesheet" type="text/css" href="css/styles.css">
          <link rel="stylesheet" type="text/css" href="css/normalize.css"> 
          <link rel="preload" href="/fonts/opensans.woff" as="font">
          <link rel="preload" href="/fonts/opensans.woff2" as="font">
          <link rel="preload" href="/fonts/opensansbold.woff" as="font">
          <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+         <script>
+            jQuery(document).ready(function($){
+            'use strict';
+               var slider=function(e){
+               const ClassName = {INDICATOR_ACTIVE: 'slider_indicator_active',ITEM: 'slider_item',ITEM_LEFT: 'slider_item_left',ITEM_RIGHT: 'slider_item_right',ITEM_PREV: 'slider_item_prev',ITEM_NEXT: 'slider_item_next',ITEM_ACTIVE: 'slider_item_active'}
+               var d=!1,u=0,i={},v={},I={},f={selector:"",isCycling:!0,direction:"next",interval:5e3,pause:!0},r=function(s){var n;return v.forEach(function(e,t){e===s&&(n=t)}),n},l=function(e,t,s){var n,a,i=ClassName.ITEM_RIGHT,r=ClassName.ITEM_PREV,l=v[t],c=v[s],o=function(){l.classList.remove(ClassName.ITEM_ACTIVE),l.classList.remove(i),c.classList.remove(r),c.classList.remove(i),c.classList.add(ClassName.ITEM_ACTIVE),window.setTimeout(function(){f.isCycling&&(clearInterval(u),C()),d=!1,l.removeEventListener("transitionend",o)},700)};d||(d=!0,"next"===e&&(i=ClassName.ITEM_LEFT,r=ClassName.ITEM_NEXT),c.classList.add(r),n=t,a=s,I.length===v.length&&(I[n].classList.remove(ClassName.INDICATOR_ACTIVE),I[a].classList.add(ClassName.INDICATOR_ACTIVE)),window.setTimeout(function(){c.classList.add(i),l.classList.add(i),l.addEventListener("transitionend",o)},0))},a=function(e){var t=i.querySelector("."+ClassName.ITEM_ACTIVE),s=r(t),n=v.length-1,a=0===s?n:s-1;"next"===e&&(a=s==n?0:s+1),l(e,s,a)},C=function(){f.isCycling&&(u=window.setInterval(function(){a(f.direction)},f.interval))},t=function(e){var t=i.querySelector("."+ClassName.ITEM_ACTIVE),s=r(t),n=e.target.getAttribute("data-slide-to");if(e.target.hasAttribute("data-slide-to")||e.target.classList.contains("slider_control"))if(e.target.hasAttribute("data-slide-to")){if(s===n)return;l(s<n?"next":"prev",s,n)}else e.preventDefault(),a(e.target.classList.contains("slider_control_next")?"next":"prev")};for(var s in e)s in f&&(f[s]=e[s]);return i="string"==typeof f.selector?document.querySelector(f.selector):f.selector,v=i.querySelectorAll("."+ClassName.ITEM),I=i.querySelectorAll("[data-slide-to]"),C(),i.addEventListener("click",t),f.pause&&f.isCycling&&(i.addEventListener("mouseenter",function(e){clearInterval(u)}),i.addEventListener("mouseleave",function(e){clearInterval(u),C()})),{next:function(){a("next")},prev:function(){a("prev")},stop:function(){clearInterval(u)},cycle:function(){clearInterval(u),C()}}}({
+                     selector:".slider",
+                     isCycling:true,
+                     direction:"next",
+                     interval:2000,
+                     pause:false
+                  });
+            });
+         </script>
    </head>
    <body>
    	<div class="wrap">
@@ -82,7 +96,51 @@
                    <a class="certificate-3" href="certificates.html">
                      <img class="certificate-horizontally" src="img/Certificate-2.png" alt="certificate_specialost" width="154px" height="110px">
                    </a>
-                </div>  
+                </div>
+
+                <div class="diplomas-mobile" style="position: relative;">
+                  <h1 class="my_diplomas">Сертификаты:</h1>
+                  <div id="top">
+                     <div id="slider" class="slider">
+                        <div class="slider_items">
+                           <div class="slider_item slider_item_1 slider_item_active">
+                              <a class="certificate-1" href="certificates.html">
+                                 <img class="certificate" src="img/html1.png" alt="htmlacademy_html_level_1">
+                               </a>
+                           </div>
+                           <div class="slider_item slider_item_2">
+                              <a class="certificate-2" href="certificates.html">
+                                 <img class="certificate" src="img/html2.png" alt="htmlacademy_html_level_2">
+                               </a>
+                           </div>
+                           <div class="slider_item slider_item_3">
+                              <a class="certificate-2" href="certificates.html">
+                                 <img class="certificate" src="img/js1.png" alt="htmlacademy_js_level_1">
+                               </a>
+                           </div>
+                           <div class="slider_item slider_item_4">
+                              <a class="certificate-2" href="certificates.html">
+                                 <img class="certificate" src="img/js2.png" alt="htmlacademy_js_level_1">
+                               </a>
+                           </div>
+                           <div class="slider_item slider_item_5">
+                              <a class="certificate-2" href="certificates.html">
+                                 <img class="certificate" src="img/js3.png" alt="htmlacademy_js_level_2">
+                               </a>
+                           </div>
+                           <!-- <div class="slider_item slider_item_6">
+                              <a class="certificate-3" href="certificates.html">
+                                 <img class="certificate-horizontally" class="certificate-3_img" src="img/Certificate.png" alt="certificate_specialost">
+                               </a>
+                           </div>
+                           <div class="slider_item slider_item_7">
+                              <a class="certificate-3" href="certificates.html">
+                                 <img class="certificate-horizontally" src="img/Certificate-2.png" alt="certificate_specialost">
+                               </a>
+                           </div> -->
+                        </div>
+                     </div>
+               </div>
             </section> 
             <section class="projects">
             	<h1 class="my_projects">Проекты:</h1>
@@ -95,7 +153,7 @@
                <div class="projects_btns">
                   <a class="project" href="https://blockchain.deex.exchange/" target="_blank"> 
                      <h2 class="progect_name"> DEEX </h2>
-                     <img src="img/deex.png" alt="deex" width="550px" height="415px">
+                     <img src="img/deex.png" alt="deex" width="550px" height="415px" style="border: 1px solid #4f4b4b;">
                   </a>
                   <a class="project" href="stradivary/index.html" target="_blank"> 
                      <h2 class="progect_name"> STRADIVARY </h2>
@@ -140,6 +198,6 @@
          <footer class="main-footer">
          </footer>
       
-     </div> 
+     </div>
    </body>
 </html>
