@@ -30,7 +30,7 @@
       
          <header class="main_header">
          	
-              <img class="my_photo" src="img/i.png" alt="Я" width="251px" height="251px">
+              <img class="my_photo modal-show-animation" src="img/i.png" alt="Я" width="251px" height="251px">
 
               <h1 class="my_name">Александра Шубина</h1>
               <h2 class="my_specialty">Front-end Developer</h2>
@@ -78,43 +78,37 @@
                  </ul> 
                 </div> 
                 <div class="diplomas">
-                   <h1 class="my_diplomas">Сертификаты:</h1>
-                   <a class="certificate-1" href="certificates.html">
-                     <img class="certificate" src="img/html1.png" alt="htmlacademy_html_level_1" width="110px" height="154px">
-                   </a>
-                   <a class="certificate-2" href="certificates.html">
-                     <img class="certificate" src="img/html2.png" alt="htmlacademy_html_level_2" width="110px" height="154px">
-                   </a>
-                   <a class="certificate-2" href="certificates.html">
-                     <img class="certificate" src="img/js1.png" alt="htmlacademy_js_level_1" "110px" height="154px">
-                   </a>
-                   <a class="certificate-2" href="certificates.html">
-                     <img class="certificate" src="img/js2.png" alt="htmlacademy_js_level_2" "110px" height="154px">
-                   </a>
-                   <a class="certificate-2" href="certificates.html">
-                     <img class="certificate" src="img/js3.png" alt="htmlacademy_js_level_3" "110px" height="154px">
-                   </a>
-                   <a class="certificate-3" href="certificates.html">
-                     <img class="certificate-horizontally" class="certificate-3_img" src="img/Certificate.png" alt="certificate_specialost" width="154px" height="110px">
-                   </a>
-                   <a class="certificate-3" href="certificates.html">
-                     <img class="certificate-horizontally" src="img/Certificate-2.png" alt="certificate_specialost" width="154px" height="110px">
-                   </a>
+                     <h1 class="my_diplomas" style="margin-right: 6px;">Сертификаты:</h1>
+                     <a href="certificates.html">
+                        <img class="certificate" src="img/html1.png" alt="htmlacademy_html_level_1" width="110px" height="154px">
+                        <img class="certificate" src="img/html2.png" alt="htmlacademy_html_level_2" width="110px" height="154px">
+                        <img class="certificate" src="img/js1.png" alt="htmlacademy_js_level_1" "110px" height="154px">
+                        <img class="certificate" src="img/js2.png" alt="htmlacademy_js_level_2" "110px" height="154px">
+                        <span>...</span>
+                        <!-- <img class="certificate" src="img/js3.png" alt="htmlacademy_js_level_3" "110px" height="154px"> -->
+                        <!-- <img class="certificate-horizontally" class="certificate-3_img" src="img/Certificate.png" alt="certificate_specialost" width="154px" height="110px">
+                        <img class="certificate-horizontally" src="img/Certificate-2.png" alt="certificate_specialost" width="154px" height="110px"> -->
+                     </a>
+                     <div class="certificate-btn_wrap">
+                        <a class="certificate-btn" href="certificates.html">Посмотреть все</a>
+                     </div>
                 </div>
                <div class="diplomas-mobile" style="position: relative;">
                   <a class="certificate-1" href="certificates.html">
                      <div class="certificate-title">
                         <h1 class="my_diplomas" style="margin-right: 6px;">Сертификаты:</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="46" height="46">
-                           <g>
-                              <path d="M507.606,422.754l-86.508-86.508l42.427-42.426c3.676-3.676,5.187-8.993,3.992-14.053s-4.923-9.14-9.855-10.784   L203.104,184.13c-5.389-1.797-11.333-0.394-15.35,3.624c-4.018,4.018-5.421,9.96-3.624,15.35l84.853,254.559   c1.645,4.932,5.725,8.661,10.784,9.855c5.059,1.197,10.377-0.315,14.053-3.992l42.427-42.426l86.508,86.507   c2.929,2.929,6.768,4.394,10.606,4.394s7.678-1.464,10.606-4.394l63.64-63.64C513.465,438.109,513.465,428.612,507.606,422.754z    M433.36,475.787l-86.508-86.507c-5.857-5.858-15.356-5.858-21.213,0l-35.871,35.871l-67.691-203.073l203.073,67.691   l-35.871,35.871c-5.853,5.852-5.858,15.356,0,21.213l86.508,86.508L433.36,475.787z"/>
-                              <path d="M195,120c8.284,0,15-6.716,15-15V15c0-8.284-6.716-15-15-15s-15,6.716-15,15v90C180,113.284,186.716,120,195,120z"/>
-                              <path d="M78.327,57.114c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213l63.64,63.64   c5.857,5.858,15.356,5.858,21.213,0c5.858-5.858,5.858-15.355,0-21.213L78.327,57.114z"/>
-                              <path d="M120.754,248.033l-63.64,63.64c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.858,15.356,5.858,21.213,0l63.64-63.64   c5.858-5.858,5.858-15.355,0-21.213C136.109,242.175,126.611,242.175,120.754,248.033z"/>
-                              <path d="M269.246,141.967l63.64-63.64c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.858-21.213,0l-63.64,63.64   c-5.858,5.858-5.858,15.355,0,21.213C253.89,147.825,263.389,147.825,269.246,141.967z"/>
-                              <path d="M120,195c0-8.284-6.716-15-15-15H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h90C113.284,210,120,203.284,120,195z"/>
-                           </g>
-                        </svg>
+                        <div class="daskoneoga-ngsecukinas">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="46" height="46">
+                              <g>
+                                 <path d="M507.606,422.754l-86.508-86.508l42.427-42.426c3.676-3.676,5.187-8.993,3.992-14.053s-4.923-9.14-9.855-10.784   L203.104,184.13c-5.389-1.797-11.333-0.394-15.35,3.624c-4.018,4.018-5.421,9.96-3.624,15.35l84.853,254.559   c1.645,4.932,5.725,8.661,10.784,9.855c5.059,1.197,10.377-0.315,14.053-3.992l42.427-42.426l86.508,86.507   c2.929,2.929,6.768,4.394,10.606,4.394s7.678-1.464,10.606-4.394l63.64-63.64C513.465,438.109,513.465,428.612,507.606,422.754z    M433.36,475.787l-86.508-86.507c-5.857-5.858-15.356-5.858-21.213,0l-35.871,35.871l-67.691-203.073l203.073,67.691   l-35.871,35.871c-5.853,5.852-5.858,15.356,0,21.213l86.508,86.508L433.36,475.787z"/>
+                                 <path d="M195,120c8.284,0,15-6.716,15-15V15c0-8.284-6.716-15-15-15s-15,6.716-15,15v90C180,113.284,186.716,120,195,120z"/>
+                                 <path d="M78.327,57.114c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213l63.64,63.64   c5.857,5.858,15.356,5.858,21.213,0c5.858-5.858,5.858-15.355,0-21.213L78.327,57.114z"/>
+                                 <path d="M120.754,248.033l-63.64,63.64c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.858,15.356,5.858,21.213,0l63.64-63.64   c5.858-5.858,5.858-15.355,0-21.213C136.109,242.175,126.611,242.175,120.754,248.033z"/>
+                                 <path d="M269.246,141.967l63.64-63.64c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.858-21.213,0l-63.64,63.64   c-5.858,5.858-5.858,15.355,0,21.213C253.89,147.825,263.389,147.825,269.246,141.967z"/>
+                                 <path d="M120,195c0-8.284-6.716-15-15-15H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h90C113.284,210,120,203.284,120,195z"/>
+                              </g>
+                           </svg>
+                        </div>
                      </div>
                      <div id="top">
                         <div id="slider" class="slider">
@@ -142,52 +136,55 @@
             </section> 
             <section class="projects">
             	<h1 class="my_projects">Проекты:</h1>
-                <div class="github">
-                  <a class="github_link" href="https://github.com/AlexyShu">
-                  	 <span class="github_text">my Github:</span>
-                     <img class="github_img" src="img/github.png" alt="github" width="42px" height="42px">
-                  </a>
-               </div> 
+               <div class="project_wrap">
+                  <div class="github git-pulse">
+                     <a class="github_link" href="https://github.com/AlexyShu">
+                        <span class="github_text">my Github:</span>
+                        <img class="github_img" src="img/github.png" alt="github" width="42px" height="42px">
+                     </a>
+                  </div> 
+                  <span class="project_notes">Кликай на проект чтоб посмотреть 😊</span>
+               </div>
                <div class="projects_btns">
                   <a class="project" href="https://blockchain.deex.exchange/" target="_blank"> 
                      <h2 class="progect_name"> DEEX </h2>
-                     <img src="img/deex.png" alt="deex" width="550px" height="415px" style="border: 1px solid #4f4b4b;">
+                     <img class="progect_pic" src="img/deex.png" alt="deex" style="border: 1px solid #4f4b4b;">
                   </a>
                   <a class="project" href="stradivary/index.html" target="_blank"> 
                      <h2 class="progect_name"> STRADIVARY </h2>
-                     <img src="img/stradivary.png" alt="stradivary" width="550px" height="415px">
+                     <img class="progect_pic" src="img/stradivary.png" alt="stradivary">
                   </a>
                   <a class="project" href="elkassa/index.html" target="_blank"> 
                      <h2 class="progect_name"> ElKassa </h2>
-                     <img src="img/elkassa.png" alt="elkassa" width="550px" height="415px">
+                     <img class="progect_pic" src="img/elkassa.png" alt="elkassa">
                   </a>
                   <a class="project" href="http://rusdebt.ru/" target="_blank"> 
                      <h2 class="progect_name"> ДОЛГОВОЙ КОНСУЛЬТАНТ </h2>
-                     <img src="img/dok.png" alt="dolgovoy-consultant" width="550px" height="415px">
+                     <img class="progect_pic" src="img/dok.png" alt="dolgovoy-consultant">
                   </a> 
                   <a class="project visually-hidden" href="what-to-watch-4/public/index.html" target="_blank"> 
                      <h2 class="progect_name"> WHAT TO WATCH </h2>
-                     <img src="img/watch.png" alt="what-to-watch" width="550px" height="415px">
+                     <img class="progect_pic" src="img/watch.png" alt="what-to-watch">
                   </a> 
                   <a class="project" href="big-trip/public/index.html" target="_blank"> 
                      <h2 class="progect_name"> BIG TRIP </h2>
-                     <img src="img/big-trip.png" alt="big-trip" width="550px" height="415px">
+                     <img class="progect_pic" src="img/big-trip.png" alt="big-trip">
                   </a> 
                   <a class="project" href="trans_hub24/index.html" target="_blank"> 
                      <h2 class="progect_name"> TRANS HUB </h2>
-                     <img class="trans_hub" src="img/transhub.png" alt="transhub_project" width="550px" height="415px">
+                     <img class="trans_hub progect_pic" src="img/transhub.png" alt="transhub_project">
                   </a> 
                   <a class="project" href="kekstagram/index.html" target="_blank"> 
                      <h2 class="progect_name"> KEKSTAGRAM </h2>
-                     <img class="kekstagram" src="img/kekstagram.png" alt="kekstagram_project" width="550px" height="415px">
+                     <img class="kekstagram progect_pic" src="img/kekstagram.png" alt="kekstagram_project">
                   </a> 
                   <a class="project" href="pink/index.html" target="_blank"> 
                      <h2 class="progect_name"> PINK </h2>
-                     <img class="pink" src="img/pink.png" alt="pink_project" width="550px" height="353px">
+                     <img class="pink progect_pic" src="img/pink.png" alt="pink_project">
                   </a>
                   <a class="project" href="sedona/index_sedona.html" target="_blank"> 
                      <h2 class="progect_name"> SEDONA </h2>
-                     <img class="sedona" src="img/sedona.png" alt="sedona_project" width="550px" height="353px">
+                     <img class="sedona progect_pic" src="img/sedona.png" alt="sedona_project">
                   </a>
                 </div>
             </section>

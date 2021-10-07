@@ -114,6 +114,7 @@ html {
 
 .my_projects {
   color: #ECECEC;
+  margin-bottom: 26px;
 }
 
 .about_skills {
@@ -157,7 +158,6 @@ html {
   color: #ECECEC; 
   display: flex;
   align-items: center;
-  padding-bottom: 66px;
 }
 
 .github_text {
@@ -206,6 +206,31 @@ html {
   margin-right: 15px;
 }
 
+.certificate-btn {
+  display: inline-block;
+  width: 12em;
+  font-size: 80%;
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: pre-line;
+  padding: .7em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+
+.certificate-btn_wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 .main_certificate-1,
 .main_certificate-2,
 .main_certificate-3 {
@@ -237,6 +262,12 @@ html {
   color: #ECECEC;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: underline;
+}
+
+.progect_name:hover {
+  font-size: 28px;
+  color: #ffffff;
 }
 
 .my_mail {
@@ -323,6 +354,81 @@ html {
   vertical-align: bottom;
 }
 
+@keyframes radial-pulse {
+  0% {
+  box-shadow: 0 0 0 0px rgba(23, 22, 22, 0.5);
+  }
+
+  100% {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
+.daskoneoga-ngsecukinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  animation: radial-pulse 1s infinite;
+}
+
+@keyframes bounce {
+	0% {-webkit-transform: translateY(-300px);transform: translateY(-300px);}
+	50% {-webkit-transform: translateY(200px);transform: translateY(200px);}
+	100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+.modal-show-animation {
+	-webkit-animation-name: bounce;
+	        animation-name: bounce;
+	-webkit-animation-duration: 1.3s;
+	        animation-duration: 1.3s;
+}
+
+@keyframes pulse {
+  0% {
+  box-shadow: 0 0 0 0px rgba(219, 219, 219, 0.5);
+  }
+  100% {
+  box-shadow: 0 0 0 20px rgba(230, 230, 230, 0);
+  }
+}
+
+.git-pulse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  animation: pulse 1s infinite;
+}
+
+.progect_pic {
+  width: 550px; 
+  height: 415px;
+}
+
+.progect_pic:hover {
+  width: 560px; 
+  height: 425px;
+}
+
+.project_notes {
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.project_wrap {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 1000px) {
   .wrep {
@@ -403,5 +509,9 @@ html {
 
   .github {
     font-size: 26px;
+  }
+
+  .git-pulse {
+    width: 200px;
   }
 }
