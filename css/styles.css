@@ -311,6 +311,10 @@ html {
   margin: 40px 0;
 }
 
+.project_second {
+  margin-left: 40px;
+}
+
 @media (max-width: 900px) {
   .main {
     flex-direction: column;
@@ -321,10 +325,66 @@ html {
   .projects_wrap {
     flex-direction: column;
   }
+  .project_second {
+    margin: 0;
+  }
+  .project {
+    margin-bottom: 80px;
+  }
+  .progect_name {
+    margin: 20px 0 0 0;
+  }
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .navigation {
     flex-direction: column;
   }
-} */
+  .navigation a {
+    border-bottom: 1px solid #232527;
+  }
+  .navigation-item {
+    text-align: center;
+    border: none;
+    margin: 0;
+    font-weight: normal;
+    padding: 18px 20px;
+  }
+  .navigation-active {
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    color: black;
+  }
+  .navigation-item:hover {
+    font-weight: bold;
+  }
+  .my_specialty {
+    font-size: 24px;
+  }
+  .my_skills {
+    border: none;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .about {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+  }
+  .about_skills {
+    font-size: 20px;
+    line-height: 36px;
+    padding: 0;
+  }
+  .project {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progect_pic {
+    width: 380px;
+    height: 300px;
+  }
+}
