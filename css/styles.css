@@ -18,9 +18,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #232527;
-  background-color: #ffffff;
+  background: #232527;
+  color: #ECECEC;
   min-width: 1220px;
+  height: 100%;
 }
 
 img {
@@ -66,48 +67,72 @@ html {
 }
 
 .main_header {
- background: #232527;
- color: #ECECEC;
+ background: #ECECEC;
+ color: #232527;
  display: flex;
  flex-direction: column;
  align-items: center;
+ justify-content: center;
+}
+
+.main {
+  background: #232527;
+  color: #ECECEC;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0 40px;
+}
+
+.me {
+  margin: 30px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .my_skills {
-  background: #ffffff;
+  width: 50%;
+  align-items: flex-start;
+  margin: 30px 0;
+  border: 2px dashed #ECECEC;
+  padding: 0 40px;
+  border-radius: 30px;
   display: flex;
-  align-items: center;
-  margin-top: 31px;
-  margin-bottom: 29px;
+  flex-direction: column;
 }
 
 .projects {
  background: #232527;
  color: #ECECEC;
  padding-top: 20px;
- padding-left: 50px;
  padding-bottom: 100px;
 }
 
 .my_name {
-  font-size: 32px;
+  font-size: 40px;
   line-height: 44px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 .my_specialty {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
+.about {
+  padding: 60px 0;
+  font-weight: 24px;
+  line-height: 48px;
+}
+
 .about_me,
-.my_diplomas,
 .my_projects {
-  font-size: 16px;
+  font-size: 26px;
   line-height: 22px;
   color: #232527;
 }
@@ -118,36 +143,28 @@ html {
 }
 
 .about_skills {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  padding-left: 0;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.about {
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .my_photo {
-  margin-top: 51px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .social {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  margin-bottom: 35px;
+  align-items: center;
+  margin: 40px 0;
   list-style: none;
   padding: 0;
-}
-
-.skills {
-  margin-left: 50px;
-}
-
-.diplomas {
-  margin-left: 90px;
-}
-
-.diplomas-mobile {
-  display: none;
+  font-size: 20px;
 }
 
 .github_img {
@@ -165,122 +182,43 @@ html {
   border-bottom: 2px solid #ECECEC;
 }
 
-.social-mail {
-  background: #E6B300;
-  border-radius: 50%;
-}
-
-.social-telegtam {
-  background: #59AAE7;
-  border-radius: 50%;
-}
-
-.social-whatsup {
-  background: #75B73B;
-  border-radius: 50%;
-}
-
-.telegram,
-.whatsup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
-
 .social_item {
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
-}
-
-.certificate-title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-right: 10px;
+  color: #ECECEC; 
 }
 
-.certificate-1,
-.certificate-2,
-.certificate-3 {
-  margin-right: 15px;
+.social_item:hover,
+.github-social_item:hover {
+  text-decoration: underline;
 }
 
-.certificate-btn {
-  display: inline-block;
-  width: 12em;
-  font-size: 80%;
-  color: rgba(255,255,255,.9);
-  text-shadow: #2e7ebd 0 1px 2px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 1.1;
-  white-space: pre-line;
-  padding: .7em 0;
-  border: 1px solid;
-  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
-  border-radius: 6px;
-  outline: none;
-  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
-  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+.social-nav {
+  margin-bottom: 10px;
 }
 
-.certificate-btn_wrap {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.main_certificate-1,
-.main_certificate-2,
-.main_certificate-3 {
-  display: flex;
-  background: #232527;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: 100vh;
+.social_nav-item {
+  padding-left: 10px;
 }
 
 .index_btn {
   margin-left: 20px;
 }
 
-.sedona,
-.pink {
-  margin-bottom: 66px;
-}
-
 .projects_btns {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.projects_wrap {
+  display: flex;
 }
 
 .progect_name {
   color: #ECECEC;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: underline;
-}
-
-.progect_name:hover {
-  font-size: 28px;
-  color: #ffffff;
-}
-
-.my_mail {
-  margin-bottom: 1px;
-}
-
-.my_telegram {
-  margin-right: 2px;
-  margin-top: 5px;
-}
-
-.my_whatsup {
-  margin-top: 5px;
 }
 
 .project {
@@ -289,6 +227,12 @@ html {
   align-items: center;
   text-align: center;
   margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.project:hover {
+  color: #f39726;
+  text-decoration: underline;
 }
 
 .project-description {
@@ -297,84 +241,31 @@ html {
   margin-top: 0;
 }
 
-#top {
-  width: 100%;
-  background: transparent;
-  height: 840px;
-}
-.slider {
-  position: relative;
-}
-
-.slider_items {
-  position: relative;
-  width:100%;
-  overflow: hidden;
-  max-height: 800px;
-  border: 1px solid #ffffff;
-}
-
-.slider_item {
-  position: relative;
-  display: none;
-  width: 100%;
-  transition: transform 0.6s ease;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-
-.slider_item_active,
-.slider_item_next,
-.slider_item_prev {
-  display: block;
-}
-.slider_item_next,
-.slider_item_prev {
-  position: absolute;
-  top: 0;
-}
-
-.slider_item_next.slider_item_left,
-.slider_item_prev.slider_item_right {
-  transform: translateX(0);
-}
-
-.slider_item_next,
-.slider_item_right.slider_item_active {
-  transform: translateX(100%);
-}
-
-.slider_item_prev,
-.slider_item_left.slider_item_active {
-  transform: translateX(-100%);
-}
-.slider_items img {
-  display: inline-block;
-  height: auto;width:100%;
-  vertical-align: bottom;
-}
-
-@keyframes radial-pulse {
-  0% {
-  box-shadow: 0 0 0 0px rgba(23, 22, 22, 0.5);
-  }
-
-  100% {
-  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-  }
-}
-
-.daskoneoga-ngsecukinas {
+.navigation {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 100px;
-  animation: radial-pulse 1s infinite;
+  width: 100%;
+  justify-content:center;
+  background: #ffffff;
 }
+
+.navigation-item {
+  color: #232527;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.navigation-item:hover {
+  text-decoration: underline;
+}
+
+.navigation-active {
+  border: 2px solid #232527;
+  border-radius: 30px;
+}
+
 
 @keyframes bounce {
 	0% {-webkit-transform: translateY(-300px);transform: translateY(-300px);}
@@ -414,104 +305,26 @@ html {
   height: 415px;
 }
 
-.progect_pic:hover {
-  width: 560px; 
-  height: 425px;
-}
-
-.project_notes {
-  font-size: 14px;
-  margin-left: auto;
-  margin-right: 40px;
-}
-
 .project_wrap {
   display: flex;
   align-items: center;
+  margin: 40px 0;
 }
 
-@media (max-width: 1000px) {
-  .wrep {
-      width: 1000px;
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
   }
-
-  .my_name {
-    font-size: 42px;
-  }
-
-  .my_specialty {
-    font-size: 28px;
-  }
-
-  .social_item {
-    width: 38px;
-    height: 38px;
-}
-
-  .my_mail {
-    width: 23px;
-    height: 20px;
-    margin-top: 9px;
-  }
-
-  .my_telegram {
-    margin-top: 7px;
-    width: 25px;
-    height: 25px;
-  }
-
-  .my_whatsup {
-    margin-top: 7px;
-    width: 24px;
-    height: 24px;
-  }
-
   .my_skills {
+    width: 100%;
+  }
+  .projects_wrap {
     flex-direction: column;
-  }
-
-  .about_me, .my_diplomas, .my_projects {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .about_skills {
-    font-size: 24px;
-    line-height: 27px;
-    padding-bottom: 40px;
-  }
-
-  .about_skills-item {
-    margin-bottom: 14px;
-  }
-
-  .diplomas {
-    display: none;
-  }
-
-  .diplomas-mobile {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 26px;
-  }
-
-  .certificate {
-    width: 410px;
-    height: 478px;
-    margin-bottom: 14px;
-  }
-
-  .certificate-horizontally {
-    width: 454px;
-    height: 400px;
-    margin-bottom: 14px;
-  }
-
-  .github {
-    font-size: 26px;
-  }
-
-  .git-pulse {
-    width: 200px;
   }
 }
+
+/* @media (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
+} */
